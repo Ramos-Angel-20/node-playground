@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-top-color: rgb(179, 173, 173);
+      border-right-color: rgb(179, 173, 173);
+      border-bottom-color: rgb(179, 173, 173);
+      border-left-color: rgb(179, 173, 173);
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      border-collapse: collapse;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+    }
+
+    table th {
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-top-color: rgb(179, 173, 173);
+      border-right-color: rgb(179, 173, 173);
+      border-bottom-color: rgb(179, 173, 173);
+      border-left-color: rgb(179, 173, 173);
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      background-image: initial;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-size: initial;
+      background-repeat-x: initial;
+      background-repeat-y: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: rgb(240, 240, 240);
+      color: rgb(49, 48, 48);
+    }
+
+    table td {
+      border-top-width: 1px;
+      border-right-width: 1px;
+      border-bottom-width: 1px;
+      border-left-width: 1px;
+      border-top-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
+      border-left-style: solid;
+      border-top-color: rgb(179, 173, 173);
+      border-right-color: rgb(179, 173, 173);
+      border-bottom-color: rgb(179, 173, 173);
+      border-left-color: rgb(179, 173, 173);
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+      text-align: center;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      background-image: initial;
+      background-position-x: initial;
+      background-position-y: initial;
+      background-size: initial;
+      background-repeat-x: initial;
+      background-repeat-y: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: rgb(255, 255, 255);
+      color: rgb(49, 48, 48);
+    }
+
+    .gjs-row {
+      display: table;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    .gjs-cell {
+      width: 8%;
+      display: table-cell;
+      height: 75px;
+    }
+
+    @media (max-width: 768px) {
+      .gjs-cell {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    @media (max-width: 595px) {
+      #iw35 {
+        padding: 10px;
+      }
+
+      #izaur {
+        background-color: #ff0000;
+      }
+
+      #ivma9 {
+        padding: 10px;
+      }
+
+      #iztej {
+        padding: 10px;
+      }
+
+      #i48fi {
+        padding: 10px;
+      }
+
+      #ix6a {
+        background-color: #ff0000;
+      }
+
+      #i9kn {
+        background-color: #c50909;
+      }
+    }
+
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="gjs-row" id="inl9m">
+    <div class="gjs-cell" id="izaur">
+      <div id="i48fi">Order number:</div>
+      <p id="ip28q">{{orderNumber}}</p>
+    </div>
+    <div class="gjs-cell" id="iw9h1">
+      <div id="ivma9">Un texto</div>
+    </div>
+    <div class="gjs-cell">
+      <div id="iztej">Un texto</div>
+    </div>
+  </div>
+  <div id="iw35">EXAMPLE PACKING</div>
+  <table id="orders-table">
+    <thead>
+      <tr>
+        <th id="ix6a">
+          <p id="ihsl">Number</p>
+        </th>
+        <th id="i9kn">
+          <p id="iadzc">Description</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {{#items}}
+      <tr>
+        <td>
+          <p>{{number}}</p>&nbsp;
+        </td>
+        <td>
+          <p>{{description}}</p>&nbsp;
+        </td>
+      </tr>
+      {{/items}}
+
+    </tbody>
+  </table>
+</body>
+
+</html>
